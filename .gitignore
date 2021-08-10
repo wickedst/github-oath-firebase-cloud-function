@@ -65,3 +65,6 @@ node_modules/
 # dotenv environment variables file
 .env
 functions/src/.runtimeconfig.json
+
+# remove .firebaserc if you wish to store your Firebase project info in source control
+.firebaserc
