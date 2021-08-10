@@ -49,7 +49,7 @@ To save your secrets, run:
 firebase deploy --only functions
 ```
 
-To use your secrets in local development (Firebase emulator), you must run:
+To use your secrets in local development (Firebase emulator), you must run in `src`:
 
 ```sh
 firebase functions:config:get > .runtimeconfig.json
