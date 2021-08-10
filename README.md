@@ -43,12 +43,18 @@ firebase functions:config:set github.client_id="1234"
 ```sh
 firebase functions:config:set github.client_secret="1234"
 ```
+To save your secrets, run: 
+
+```sh
+firebase deploy --only functions
+```
 
 To use your secrets in local development (Firebase emulator), you must run:
 
 ```sh
 firebase functions:config:get > .runtimeconfig.json
 ```
+
 
 ## Set up and local development
 
