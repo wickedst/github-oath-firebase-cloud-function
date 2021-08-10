@@ -1,9 +1,5 @@
-import * as functions from "firebase-functions";
+import { callback } from './callback';
+import { authorization } from './authorization';
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
-
-export const helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
-});
+exports.authorization = authorization;
+exports.callback = callback;
