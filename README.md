@@ -69,7 +69,9 @@ The terminal output from `firebase emulators:start` should provide you with your
 
 Visit the authorization endpoint to kick off the flow.
 
-The end goal is to be redirected back to your app's domain with the Github `access_token` (what you'll use to make your API calls - the goal of this whole process) as a query string variable that you can save to your database, local storage, or whatever you like for future Github API calls.
+The end goal is to be redirected back to your app's domain with the Github `access_token` (what you'll use to make your API calls - the goal of this whole process) as a query string variable that you can save to your database, local storage, or whatever you like for future Github API calls. That will look like
+
+`https://yourapp.com/?access_token=gibberish`
 
 ## Deployment
 
