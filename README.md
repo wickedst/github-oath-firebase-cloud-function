@@ -12,6 +12,24 @@ This is not to be confused with the standard Firebase Github auth, which is for 
 - Node.js 14 (Supported by Firebase).
 - Github OAuth app
 
+## Firebase project setup
+
+After cloning the repo, in the door directory run:
+
+```sh
+firebase init functions
+```
+
+Answer:
+
+- Use Typescript
+- Use ESLint (Y)
+- Overwrite package.json (N)
+- Overwrite eslint.js (N)
+- Overwrite tsconfig.json (N)
+- Overwrite index.ts (N)
+- Overwrite .gitignore (N)
+
 ## Github OAuth app + Secrets
 
 First, [create your OAuth app at Github](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
@@ -36,7 +54,6 @@ firebase functions:config:get > .runtimeconfig.json
 
 ```sh
 cd functions/src
-npm i
 npm run build
 ```
 
