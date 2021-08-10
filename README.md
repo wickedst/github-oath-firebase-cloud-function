@@ -34,6 +34,10 @@ Answer:
 
 First, [create your OAuth app at Github](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
 
+Add what will be the local, emulated callback URL in the 'Authorization callback URL' field:
+
+`http://localhost:5001/[YOUR_PROJECT_ID]/us-central1/callback`
+
 Set your Github OAuth app Client ID and Client Secret using [Firebase Environment configuration](https://firebase.google.com/docs/functions/config-env), e.g.
 
 ```sh
@@ -84,3 +88,7 @@ The end goal is to be redirected back to your app's domain with the Github `acce
 ```sh
 firebase deploy --only functions
 ```
+
+In your Github OAuth app settings, replace the Authorization callback URL with your live function callback URL. Which will look like 
+
+` https://us-central1-[YOUR_PROJECT_ID].cloudfunctions.net/callback`
